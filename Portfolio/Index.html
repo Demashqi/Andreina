@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+  </head>
+
+<style>
+  body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>  
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+  <!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-black">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-theme-d2 w3-left-align">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-black w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="Index.html" class="w3-bar-item w3-button w3-white"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="#digital" class="w3-bar-item w3-button w3-hide-small">Digital Media</a>
+   <a href="#game" class="w3-bar-item w3-button w3-hide-small">Game Development</a>
+   <a href="#web" class="w3-bar-item w3-button w3-hide-small">Web Development</a>
+   <a href="copyrights.html" class="w3-bar-item w3-button w3-hide-small">Copyrights &#169;</a>
+     <div class="w3-dropdown-hover w3-hide-small">
+     <button class="w3-button" title="Notifications">More <i class="fa fa-caret-down"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+       <a href="media.html" class="w3-bar-item w3-button">Medias</a>
+       <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+     </div>
+   </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="#course" class="w3-bar-item w3-button">Course</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY EPORTFOLIO</b></h1>
+  <p>Welcome to the space of <span class="w3-tag">Driina</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- COLLEGE BLOG -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="Cover/ait.jpg" alt="AIT" style="width:100%">
+    <div class="w3-container">
+      <h3><b>College Life</b></h3>
+      <h5>1st Year Education, <span class="w3-opacity">October 28, 2020</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Due to the Covid-19 pandemic, starting college has had more downs than ups. It has been a challenge waking up early to go to
+         an online class and spending hours of the day in front of a laptop. I'm sure many students can relate to this! The problem is, 
+        no one is certain of anything... No one has prepared us and we are supposed to simply live it. Live 2 years inside our homes while 
+        the government decides on our behalf what is best and what is not for us! Kinda ridiculous in my opinion but Oh Well... 
+        Back to the college situation, I can't complain about the professors, we as a student can all see how much effort they are putting 
+        on us and trying to get us into engaging in the classes. It's not easy for any side, but I believe that with a little push from them and 
+        a little effort from us, we are able to go through this year. At this very moment, I am trying to get all my projects purged for 
+        the last month of college. It's crazy how the year has gone by so rapidly... But I guess that's what college is about in one way, 
+        you learn, you're accessed and you're off to work during the long summer days. </p>
+      <p> My hopes are, this year the vaccines bring us some good news and hopefully bring us back to some normality too. </p>
+      <p> Fingers crossed -A </p>
+      <div class="w3-row">
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- GAME BLOG -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="Cover/games.jpg" alt="Game" style="width:100%">
+    <div class="w3-container" id="game">
+      <h3><b>Game Development</b></h3>
+      <h5>A Classic Game begins, <span class="w3-opacity">Semester II, 2021</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Game Development is the art of creating games and describes the design, development and release of a game. 
+        It may involve concept generation, design, build, test and release. While you create a game, it is important to think 
+        about the game mechanics, rewards, player engagement and level design.</p>
+      <p>Many people when they think about a game creator, they think of two things; A Game Designer and a Game Developer!</p>
+      <p>Game designer and game developer are two very similar job titles you hear getting thrown around and many people assume 
+        these terms mean the same thing. Both titles are alike, but the jobs themselves are quite different and students are generally 
+        drawn to one role or the other. The best game designers are often creative people and they blend a number of different skills 
+        together ranging from programming to graphic design and including animation and art. Designers dream up all the ideas that are 
+        behind the game itself and often help come up with the games story. They design the initial framework and set out the flow of
+         the game. Game developers are essentially programmers and focus more on the technical aspects of making the game. They have 
+         a deep understanding of all the different languages used in game development and are really considered to be a software or 
+         computer engineer. You’ll need to become an expert in languages such as C++, Perl, Lua and more, once you're rooting for Game
+        Development. </p>
+      <div class="w3-row">
+      </div>
+    </div>
+  </div>
+
+<!-- MEDIA BLOG -->
+<div class="w3-card-4 w3-margin w3-white">
+  <img src="Cover/media.jpg" alt="Media" style="width:100%">
+    <div class="w3-container" id="digital">
+      <h3><b>Digital Media</b></h3>
+      <h5>All About the Media, <span class="w3-opacity">Semester I, 2020</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>The word “media” applies to many things in the 21st century, from mass media to news media, and traditional media to 
+        the many emerging forms of digital media. It comes from the Latin medius or medium, which means “the middle layer.” 
+        Media is an expression that brings some type of information or entertainment from one body to another.</p>
+      <p>Before the advent of the digital age, the most popular forms of media were what we now call analog or 
+        traditional media: radio, newspapers, magazines, billboards, journals, and the like. Since then, the technological 
+        revolution has brought with it many new types of media that now play a major role in disseminating information 
+        and entertainment to populations around the world. </p>
+      <p>Unlike traditional media, digital media is transmitted as digital data, which at its simplest involves digital 
+        cables or satellites sending binary signals –– 0s and 1s –– to devices that translate them into audio, video, graphics, 
+        text, and more. Anytime you use your computer, tablet, or cellphone, opening web-based systems and apps, you’re 
+        consuming digital media. Digital media might come in the form of videos, articles, advertisements, music, podcasts, 
+        audiobooks, virtual reality, or digital art.</p>
+      <div class="w3-row">
+      </div>
+    </div>
+  </div>
+
+<!-- WEB BLOG -->
+<div class="w3-card-4 w3-margin w3-white">
+  <img src="Cover/web.jpg" alt="Web" style="width:100%">
+    <div class="w3-container" id="web">
+      <h3><b>Web Development</b></h3>
+      <h5>Websites & More, <span class="w3-opacity">2020/21</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Web development is the process of building websites and applications for the internet, or for a private 
+        network known as an intranet. Web development is not concerned with the design of a website; rather, 
+        it’s all about the coding and programming that powers the website’s functionality. Web development can 
+        be broken down into three layers: client-side coding (frontend), server-side coding (backend) and database technology. </p>
+      <p>Client-side scripting, or frontend development, refers to everything that the end user experiences directly. Client-side 
+        code executes in a web browser and directly relates to what people see when they visit a website. Things like layout, fonts, 
+        colours, menus and contact forms are all driven by the frontend.</p>
+      <p>Server-side scripting, or backend development, is all about what goes on behind the scenes. The backend is essentially 
+        the part of a website that the user doesn’t actually see. It is responsible for storing and organizing data, and ensuring that 
+        everything on the client-side runs smoothly. It does this by communicating with the frontend. Whenever something happens 
+        on the client-side — say, a user fills out a form — the browser sends a request to the server-side. The server-side “responds”
+         with relevant information in the form of frontend code that the browser can then interpret and display.</p>
+        <p>Websites also rely on database technology. The database contains all the files and content that are necessary for a 
+          website to function, storing it in such a way that makes it easy to retrieve, organize, edit and save. The database runs 
+          on a server, and most websites typically use some form of relational database management system (RDBMS).</p>
+        <p>To summarize: the frontend, backend and database technology all work together to build and run a fully 
+          functional website or application, and these three layers form the foundation of web development.</p>
+      <div class="w3-row">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-white w3-center w3-margin-top">
+  <img src="Images/Intro2.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Introducing Me</b></h4>
+      <p> Oie! My name is Andreina Carvalho, but most people calls me Drina for short.</p>
+      <p> I'm a 1st Year student in AIT, who has lived almost 2 decades in this weird world. My roots are Brazilian but most times 
+        I feel more Irish than Latina. My base is and always will be my family. I believe if you have your family by your side you don't need
+        need to worry about anything else. They give me the motivation I need to focus on life and be a better version of myself each day.
+        For those who believe in astrology signs, I'm Gemini and yes, I can some (most) times have quite a few personalities, but different
+        from what they say, I don't consider myself untrusty at all! Quite the opposite, I rather help others and earn their respect for life. </p>
+      <p> Enough about me.. I just would like to state that this Eportfolio is being made to show how much I've learned in my first year of 
+        college, but also to show a little about me and what I do and use to facilitate my life when studying and doing my projects.
+      </p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding w3-black">
+      <h4>A picture speaks more than words</h4>
+    </div>
+    <ol class="w3-ul w3-hoverable w3-white">
+
+      <li class="w3-padding-16">
+        <a href="achievements.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Achievements</a> 
+        <span>My Best Days</span>
+      </li>
+
+      <li class="w3-padding-16">
+        <a href="art.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Art | Photography</a> 
+        <span>My Artistic Side</span>
+      </li>
+          
+      <li class="w3-padding-16">
+        <a href="ohana.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large">Ohana</a> 
+        <span>My Brazilian Roots</span>
+      </li>
+      </li>  
+    </ol>
+  </div>
+  <hr>
+
+  <div class="w3-white w3-margin">
+    <div class="w3-container w3-padding w3-black">
+      <h4>Follow Me</h4>
+    </div>
+    <div class="w3-container w3-xlarge w3-padding">
+      <a onclick= "window.location.href='https://www.facebook.com/andreina.carvalho.100'" class="fa fa-facebook w3-hover-opacity"></a>
+      <a onclick= "window.location.href='https://www.instagram.com/its_driina/'" class="fa fa-instagram w3-hover-opacity"></a>
+      <a onclick= "window.location.href='#'" class="fa fa-snapchat w3-hover-opacity"></a>
+      <a onclick= "window.location.href='https://www.pinterest.ie/adicteened/_saved/'" class="fa fa-pinterest w3-hover-opacity"></a>
+      <a onclick= "window.location.href='https://twitter.com/AAyshala?s=08'" class="fa fa-twitter w3-hover-opacity"></a>
+      <a onclick= "window.location.href='https://www.linkedin.com/in/andreina-carvalho-491243207'" class="fa fa-linkedin w3-hover-opacity"></a>
+    </div>
+  </div>
+  <hr>
+</div>
+
+</div><br>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='contact.html'">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='copyrights.html'" >Next »</button>
+
+  <p>A00280342 - Andreina Carvalho &#169; </p>
+  <br>
+</footer>
+
+  </body>
+  </html>
+  

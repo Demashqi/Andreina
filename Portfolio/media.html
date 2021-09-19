@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<title>Media</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+  <style>
+    #more {display: none;}
+  </style>
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-yellow">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="Index.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-home w3-margin-right"></i>Home</a>
+   <a href="#digital" class="w3-bar-item w3-button w3-hide-small">Digital Media</a>
+   <a href="#game" class="w3-bar-item w3-button w3-hide-small">Game Development</a>
+   <a href="#web" class="w3-bar-item w3-button w3-hide-small">Web Development</a>
+   <a href="copyrights.html" class="w3-bar-item w3-button w3-hide-small">Copyrights &#169;</a>
+     <div class="w3-dropdown-hover w3-hide-small">
+     <button class="w3-button" title="Notifications">More <i class="fa fa-caret-down"></i></button>     
+     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+       <a href="media.html" class="w3-bar-item w3-button">Medias</a>
+       <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+     </div>
+   </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <a href="#course" class="w3-bar-item w3-button">Course</a>
+  </div>
+</div>
+
+<!-- Gimp Project -->
+<div class="w3-container w3-padding-32 w3-light-grey" id="media">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-white">GIMP Editor | Camtasia | Audacity </h3>
+</div>
+
+ <!-- Photo grid -->
+ <div class="w3-row w3-grayscale-min w3-light-grey">
+  <div class="w3-third">
+    <img src="Gimp/Crash.jpg" style="width:90%" onclick="onClick(this)" alt="Wilbur">
+    <img src="Gimp/Wilbur.jpg" style="width:90%" onclick="onClick(this)" alt="Crash">
+    <img src="Gimp/Space.jpg" style="width:90%" onclick="onClick(this)" alt="Space">
+ </div>
+  
+ <div class="w3-third">
+    <img src="Gimp/Sky.jpg" style="width:90%" onclick="onClick(this)" alt="Sky">
+    <img src="Gimp/Postcard.jpg" style="width:90%" onclick="onClick(this)" alt="Postcard">
+
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">GIMP Layers</div>
+    <video width="90%" controls>
+      <source src="Videos/Project.mp4" type="video/mp4" alt="gimp video">
+        Your browser does not support HTML video.
+    </video>
+      </div>
+
+    <video width="90%" controls>
+      <source src="Videos/Eportfolio.mp4" type="video/mp4" alt="portfolio video">
+        Your browser does not support HTML video.
+    </video>
+  </div>
+
+  <div class= "w3-third">
+
+    <img src="Cover/digital.png" style="width:100%">
+      <div class="w3-container w3-round-large w3-white">
+        <h4><b>GIMP..</b></h4>
+        <p> Thanks to GIMP, or the GNU Image Manipulation Program, it’s never been easier and more affordable 
+          to create epic looking thumbnails and high-quality logos. GIMP is a free to use, open-source answer to image 
+          editors looking for an Adobe Photoshop alternative. It’s also quite beginner friendly so you won't be lost while using it.<span id="dots">...</span><span id="more"> 
+          It's also filled with tips and tricks to help produce the alterations and revisions that your image requires. <br/>
+          On my first video to the left you will see a recording I made using GIMP. In there I demontrate how to get a layer and add it to blank page. It's simple, easy 
+          to use and practical. All you need is time to get the hang of it and inspire yourself when editing.  <br/>
+          </p>
+        </span>
+          <button id="myBtn1" onclick="myFunction()">Read more</button>
+      </div>
+      <br>
+      <div class="w3-container w3-round-large w3-white">
+        <h4><b>Audacity..</b></h4>
+        <p>Audacity is the default software for many multimedia content creators because not only is it free, it’s also relatively easy 
+        to use. As a bonus, it doesn’t consume a lot of CPU power, so it can run on pretty much any computer. </br>
+        When you open the software, you’ll start with a new file, and you can import an audio file or hit record. <span id="dots">...</span><span id="more">
+        To import, head to [File > Import] and then find and click on the audio file you want. 
+        If you want to layer your audio with music, or if you have multiple files, you’ll want to have a track for each one, which makes it easier to edit. </br>
+        Getting rid of noises and hummings is my reason for using Audacity! The low humming noise is annoying, and it ruins the listener’s or viewers’ 
+        experience, so to get rid of it you will need to; click and highlight a few seconds of noise within the clip (make sure it’s just noise) then click on
+        [Effect > Noise Reduction], which you can find in the top menu. Select “Get Noise Profile,” which will close the “Noise Reduction” window, and then select 
+        the whole track, or whichever part of the track is noisy, and use [Effect > Noise Reduction] again. The “Noise Reduction” effect can get rid of noise coming 
+        from fans, A/C units, breathing, and other annoyances.</p>
+        </span>
+        <button  id="myBtn2" onclick="myFunction()">Read more</button>
+      </div>
+      <br>
+      <div class="w3-container w3-round-large w3-white">
+        <h4><b>Camtasia..</b></h4>
+        <p>Camtasia can be very easy once you get the hang of it! It all begins with a planning and from then onwards, it's simple steps to follow.</br>
+        Step 1. Write a Script! And don't forget to use words you’d use in everyday conversations. This will give your script a smooth, natural feel. Once you 
+        have the script ready, it's all about practice.<span id="dots">...</span><span id="more">
+       Step 2. Record the audio narration! Start by getting your hands on the best microphone you can find. This will make a huuuuge difference (trust me on that). 
+       Usually that's where Audacity comes in; but you can also use Camtasia's recorder if you just want something simple. </br>   
+       Step 3. Record video of your screen! Make sure to clean up your desktop, and close the other applications.</br>
+       Step 4. Cut out mistakes and trim extra footage! This is usually the boring part as you may have to watch the video a thousand times.. But it's important to clean up 
+      the mistakes we usually make. After that, once you're happy, you just have to upload an share your video to others.</p>
+      </span>
+      <button  id="myBtn3" onclick="myFunction()">Read more</button>
+  </br>
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+  </div>
+  <br>
+  </div>
+  <hr>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='copyrights.html'">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="window.location.href='contact.html'" >Next »</button>
+  
+  <p>A00280342 - Andreina Carvalho &#169; </p>
+  <br>
+</footer>
